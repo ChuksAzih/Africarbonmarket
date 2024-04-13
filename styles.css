@@ -69,10 +69,9 @@ footer{
 }
 
 .btn{
-  border-radius: 128px;
-background: linear-gradient(145deg, #837f7f, #9b9797);
-box-shadow:  15px 15px 29px #676464,
-             -15px -15px 29px #bbb6b6;
+  border-radius: 35px;
+  background: linear-gradient(315deg, #277561, #2e8b74);
+  box-shadow:  -9px -9px 13px #216352,9px 9px 13px #35a186;
 }
 
 .nav-scroller {
