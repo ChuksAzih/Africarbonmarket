@@ -152,12 +152,12 @@ box-shadow:  15px 15px 29px #676464,
  @media (max-width: 700px) {
   .home {
     text-align: end;
-    font-size: 1rem;
+    font-size: small;
   }
 
   .home-p{
     text-align: end;
-    font-size: smaller;
+    font-size: xx-small;
   }
 
   .btn{
