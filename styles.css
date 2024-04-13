@@ -68,15 +68,12 @@ footer{
   text-align: center;
 }
 
-
-
-@media (min-width: 768px) {
-  img {
-    font-size: 3.5rem;
-  }
+.btn{
+  border-radius: 128px;
+background: linear-gradient(145deg, #837f7f, #9b9797);
+box-shadow:  15px 15px 29px #676464,
+             -15px -15px 29px #bbb6b6;
 }
-
-
 
 .nav-scroller {
   position: relative;
@@ -151,3 +148,34 @@ footer{
   filter: brightness(.8);
  }
  
+
+ @media (max-width: 700px) {
+  .home {
+    text-align: end;
+    font-size: 1rem;
+  }
+
+  .home-p{
+    text-align: end;
+    font-size: smaller;
+  }
+
+  .btn{
+    width: 75px;
+    height: 35px;
+    font-size: xx-small;
+  }
+  .footer-img{
+    width: 25px;
+    height: 25px;
+  }
+  .footer-p{
+    font-size: xx-small;
+  }
+
+  .button{
+    width: 75px;
+    height: 35px;
+    font-size: xx-small;
+  }
+}
