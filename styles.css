@@ -324,7 +324,7 @@ footer{
 
   .card{
     width: 150px;
-    height: 190px;
+    height: 150px;
   }
 
   .text-title{
@@ -356,11 +356,16 @@ footer{
   }
 
   .contact-inputs {
-    width: 80vw;
+    width: 40vw;
   }
 
   .carbon-inputs {
     width: 40vw;
+  }
+
+  .carbon-xchange-forms {
+    margin-left: 0;
+    margin-right: o;
   }
 }
 
