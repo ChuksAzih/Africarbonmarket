@@ -38,13 +38,89 @@ h3 {
   background-color: rgb(9, 121, 111);
 }
 
+/* contact page */
+
+.contact-container {
+  height: 100vh;
+  background: linear-gradient(grey,black);
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: grey;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  width: 400px;
+  padding-top: 15px;
+  padding-left: 25px;
+  border-radius: 20px;
+}
+
+.contact-right{
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(green, grey );
+  cursor: pointer;
+}
+/* */
+
 .carbon-account {
   padding: 3% 9% 1.8%;
-  background-color: rgba(41, 41, 43, 0.877);
+  background: rgba(41, 41, 43, 0.877);
 }
 
 .carbon-xchange {
   padding: 5% 9% 7.5%;
+}
+
+.carbon-xchange-forms {
+  padding: 50px 30px 20px;
+  margin-right: 90px;
+  margin-left: 90px;
+  background: linear-gradient(grey,black);
+}
+
+.carbon-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  margin: 15px;
+  font-weight: 500;
+  color: grey;
+  border-radius: 50px;
 }
 
 
@@ -72,9 +148,9 @@ footer{
 
 
 .btn{
-  border-radius: 31px;
-  background: linear-gradient(45deg, #218923, #28a32a);
-  box-shadow:  7px -7px 26px #1e7a1f,-7px 7px 26px #2cb62f;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #218923, #525353);
+  
 }
 
 .nav-scroller {
@@ -215,6 +291,7 @@ footer{
  }
 
 
+
  @media (max-width: 700px) {
   .home {
     text-align: end;
@@ -263,7 +340,27 @@ footer{
   }
 
   h1{
-    font-size: smaller;
+    font-size: small;
+  }
+
+  h2 {
+    font-size: small;
+  }
+
+  h3 {
+    font-size: small;
+  }
+
+  .contact-right {
+    display: none;
+  }
+
+  .contact-inputs {
+    width: 80vw;
+  }
+
+  .carbon-inputs {
+    width: 40vw;
   }
 }
 
