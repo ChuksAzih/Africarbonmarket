@@ -323,8 +323,9 @@ footer{
   }
 
   .card{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 160px;
+    padding: 2%;
   }
 
   .text-title{
@@ -351,6 +352,11 @@ footer{
     font-size: small;
   }
 
+  .contact-left {
+    margin: 2%;
+    padding: 1%;
+  }
+
   .contact-right {
     display: none;
   }
@@ -364,8 +370,9 @@ footer{
   }
 
   .carbon-xchange-forms {
-    margin-left: 0;
     margin-right: o;
+    margin-left: 0;
+    padding-right: 40px;
   }
 }
 
