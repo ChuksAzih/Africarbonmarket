@@ -33,9 +33,23 @@ h3 {
   border-radius: 47%;
 }
 
+.activity{
+  padding: 2% 3% 1%;
+  text-align: center;
+  background-color: rgb(26, 24, 24);
+}
+
 .about-us {
   padding: 5% 9% 6%;
-  background-color: rgb(9, 121, 111);
+  background: linear-gradient(rgb(9, 121, 111),rgb(7, 43, 9));
+}
+
+.about-border{
+  margin-bottom: 30px;
+  border-radius: 60px;
+  padding: 2%;
+  text-align: center;
+  background: linear-gradient(rgb(7, 43, 9),rgb(9, 121, 111));
 }
 
 /* contact page */
@@ -100,15 +114,23 @@ h3 {
   background: rgba(41, 41, 43, 0.877);
 }
 
+.carbon-account-forms {
+  padding: 50px 30px 20px;
+  margin-right: 90px;
+  margin-left: 90px;
+  background: linear-gradient(rgba(41, 41, 43, 0.877),rgb(7, 43, 9));
+}
+
 .carbon-xchange {
   padding: 5% 9% 7.5%;
+  background-color: grey;
 }
 
 .carbon-xchange-forms {
   padding: 50px 30px 20px;
   margin-right: 90px;
   margin-left: 90px;
-  background: linear-gradient(grey,black);
+  background: linear-gradient(grey,rgb(7, 43, 9));
 }
 
 .carbon-inputs {
@@ -126,13 +148,15 @@ h3 {
 
 .climate-change {
   padding: 3% 9% 1.8%;
-  background-color: rgb(109, 107, 5);
+  background: linear-gradient(rgb(109, 107, 5),rgb(7, 43, 9));
   
 }
-.activity{
-  padding: 2% 3% 1%;
+.climate-border{
+  margin-bottom: 30px;
+  border-radius: 60px;
+  padding: 2%;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(7, 43, 9),rgb(109, 107, 5));
 }
 
 footer{
@@ -228,7 +252,7 @@ footer{
 
 .my-card{
  padding: 3.9%;
- background-color: rgba(36, 35, 34, 0.815);
+ background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
 }
 
 .card {
@@ -323,9 +347,8 @@ footer{
   }
 
   .card{
-    width: 140px;
-    height: 160px;
-    padding: 2%;
+    width: 150px;
+    height: 190px;
   }
 
   .text-title{
@@ -352,27 +375,16 @@ footer{
     font-size: small;
   }
 
-  .contact-left {
-    margin: 2%;
-    padding: 1%;
-  }
-
   .contact-right {
     display: none;
   }
 
   .contact-inputs {
-    width: 40vw;
+    width: 80vw;
   }
 
   .carbon-inputs {
     width: 40vw;
-  }
-
-  .carbon-xchange-forms {
-    margin-right: o;
-    margin-left: 0;
-    padding-right: 40px;
   }
 }
 
