@@ -23,6 +23,7 @@ h3 {
 }
 
 .p {
+  color: rgb(255, 255, 255);
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
   row-gap: 50px;
@@ -31,6 +32,10 @@ h3 {
 .round-edges {
   border-bottom: 2cap;
   border-radius: 47%;
+  margin-bottom: 30px;
+  padding: 2%;
+  text-align: center;
+  background: linear-gradient(rgb(7, 43, 9),rgb(109, 107, 5));
 }
 
 .activity{
@@ -109,10 +114,145 @@ h3 {
 }
 /* */
 
+/* START FOR CARBON ACCOUNT PAGE*/
 .carbon-account {
   padding: 3% 9% 1.8%;
-  background: rgba(41, 41, 43, 0.877);
+  background: linear-gradient( rgba(0, 0, 0, 0.87), rgba(41, 41, 43, 0.877)  );
 }
+
+.carbon-account2 {
+  padding: 3% 9% 1.8%;
+  background: linear-gradient(rgba(41, 41, 43, 0.877) , rgb(0, 0, 0) );
+}
+
+.carbon-account3 {
+  padding: 3% 9% 1.8%;
+  background: linear-gradient(rgb(0, 0, 0) , rgba(41, 41, 43, 0.877) );
+}
+
+
+/* */
+.c-a-content1 {
+  display: none;
+}
+
+#ch1 {
+  display: none;
+}
+
+#ch1:checked ~ .c-a-content1 {
+  display: block;
+}
+
+#ch1:checked ~ label {
+  display: none;
+}
+/* */
+/* */
+
+.c-a-content2 {
+  display: none;
+}
+
+#ch2 {
+  display: none;
+}
+
+#ch2:checked ~ .c-a-content2 {
+  display: block;
+}
+
+#ch2:checked ~ label {
+  display: none;
+}
+/* */
+/* */
+
+.c-a-content3 {
+  display: none;
+}
+
+#ch3 {
+  display: none;
+}
+
+#ch3:checked ~ .c-a-content3 {
+  display: block;
+}
+
+#ch3:checked ~ label {
+  display: none;
+}
+/* */
+/* */
+
+.c-a-content4 {
+  display: none;
+}
+
+#ch4 {
+  display: none;
+}
+
+#ch4:checked ~ .c-a-content4 {
+  display: block;
+}
+
+#ch4:checked ~ label {
+  display: none;
+}
+/* */
+/* */
+
+.c-a-content5 {
+  display: none;
+}
+
+#ch5 {
+  display: none;
+}
+
+#ch5:checked ~ .c-a-content5 {
+  display: block;
+}
+
+#ch5:checked ~ label {
+  display: none;
+}
+/* */
+/* */
+
+.c-a-content6 {
+  display: none;
+}
+
+#ch6 {
+  display: none;
+}
+
+#ch6:checked ~ .c-a-content6 {
+  display: block;
+}
+
+#ch6:checked ~ label {
+  display: none;
+}
+/* */
+/* */
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background-color: #218923;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+}
+
+
 
 .carbon-account-forms {
   padding: 50px 30px 20px;
@@ -120,6 +260,8 @@ h3 {
   margin-left: 90px;
   background: linear-gradient(rgba(41, 41, 43, 0.877),rgb(7, 43, 9));
 }
+
+/* END FOR CARBON ACCOUNT PAGE*/
 
 .carbon-xchange {
   padding: 5% 9% 7.5%;
