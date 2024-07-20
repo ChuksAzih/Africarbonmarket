@@ -280,14 +280,14 @@ label {
 }
 
 .carbon-xchange-forms {
-  padding: 75px 80px;
-  margin-right: 90px;
-  margin-left: 90px;
+  padding: 48px 58px;
+  margin-right: 70px;
+  margin-left: 70px;
   background: linear-gradient(rgb(7, 43, 9), rgb(8, 8, 8));
 }
 
 .carbon-inputs {
-  width: 400px;
+  width: 350px;
   height: 50px;
   border: none;
   outline: none;
