@@ -136,6 +136,24 @@ h3 {
 
 
 /* */
+.h-a-content0 {
+  display: none;
+}
+
+#H0 {
+  display: none;
+}
+
+#H0:checked ~ .c-a-content1 {
+  display: block;
+}
+
+#H0:checked ~ label {
+  display: none;
+}
+/* */
+
+/* */
 .c-a-content1 {
   display: none;
 }
