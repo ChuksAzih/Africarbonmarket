@@ -453,14 +453,14 @@ footer{
   width: 60%;
   border-radius: 1rem;
   border: none;
-  background-color: #008bf8;
-  color: #fff;
+  background-color: #f8f9fa;
+  color: #444242;
   font-size: 1rem;
   padding: .5rem 1rem;
   position: absolute;
   left: 50%;
   bottom: 0;
-  opacity: 0;
+  opacity: 16;
   transition: 0.3s ease-out;
  }
  
