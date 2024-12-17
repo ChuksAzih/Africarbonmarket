@@ -519,14 +519,14 @@ footer{
 
   .card{
     width: 110px;
-    height: 150px;
-    margin: 5px;
-    padding: 8px;
+    height: 180px;
+    margin: 12px;
+    padding: 10px;
     align-content: center;
   }
 
   .my-card{
-    padding: 2px;
+    padding: 15px;
     background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
    }
 
