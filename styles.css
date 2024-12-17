@@ -528,6 +528,7 @@ footer{
   .my-card{
     padding: 15px;
     margin-bottom: 25px;
+    align-items: center;
     background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
    }
 
