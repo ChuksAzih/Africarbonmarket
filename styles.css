@@ -518,13 +518,13 @@ footer{
   }
 
   .card{
-    width: 100px;
+    width: 90px;
     height: 100px;
     margin: 10px;
   }
 
   .my-card{
-    padding: 0.7%;
+    padding: 10px;
     background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
    }
 
@@ -537,7 +537,9 @@ footer{
   }
 
   .card-button{
-    size: smaller;
+    width: 75px;
+    height: 35px;
+    font-size: xx-small;
   }
 
   h1{
