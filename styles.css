@@ -518,17 +518,15 @@ footer{
   }
 
   .card{
-    width: 116px;
+    width: 137px;
     height: 190px;
-    margin: 8px;
-    padding: 10px;
+    margin: 10px;
+    padding: 15px;
     align-content: center;
   }
 
   .my-card{
-    padding: 10px;
-    margin: 15px;
-    align-items: center;
+    padding: 25px;
     background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
    }
 
