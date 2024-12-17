@@ -453,7 +453,7 @@ footer{
   width: 60%;
   border-radius: 1rem;
   border: none;
-  background-color: #73777a;
+  background-color: #feffff;
   color: #018622;
   font-size: 1rem;
   padding: .5rem 1rem;
@@ -518,18 +518,20 @@ footer{
   }
 
   .card{
-    width: 90px;
-    height: 100px;
-    margin: 10px;
+    width: 110px;
+    height: 150px;
+    margin: 5px;
+    padding: 8px;
+    align-content: center;
   }
 
   .my-card{
-    padding: 10px;
+    padding: 2px;
     background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
    }
 
   .text-title{
-    font-size: smaller;
+    font-size: xx-small;
   }
 
   .text-body{
