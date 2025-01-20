@@ -470,6 +470,7 @@ footer{
 
 .my-card{
  padding: 2.9%;
+ height: 500px;
  background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
 }
 
