@@ -469,15 +469,15 @@ footer{
  }
 
 .my-card{
- padding: 3.9%;
+ padding: 2.9%;
  background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
 }
 
 .card {
-  margin: auto;
-  padding: 5%;
+  margin: 30px;
+  padding: 80px;
   width: 380px;
-  height: 200px;
+  height: 3000px;
   border-radius: 20px;
   background: #f5f5f5;
   position: relative;
@@ -489,8 +489,8 @@ footer{
  
  .card-details {
   color: black;
-  height: 100%;
-  gap: .5em;
+  height: 80%;
+  gap: .1.5em;
   display: grid;
   place-content: center;
  }
