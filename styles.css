@@ -154,6 +154,42 @@ h3 {
 /* */
 
 /* */
+.h-p-content1 {
+  display: none;
+}
+
+#hp1 {
+  display: none;
+}
+
+#hp1:checked ~ .c-a-content1 {
+  display: block;
+}
+
+#hp1:checked ~ label {
+  display: none;
+}
+/* */
+
+/* */
+.h-p-content2 {
+  display: none;
+}
+
+#hp2 {
+  display: none;
+}
+
+#hp2:checked ~ .h-p-content2 {
+  display: block;
+}
+
+#hp2:checked ~ label {
+  display: none;
+}
+/* */
+
+/* */
 .c-a-content1 {
   display: none;
 }
