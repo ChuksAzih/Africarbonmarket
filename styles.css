@@ -61,6 +61,12 @@ h3 {
   background: linear-gradient(rgb(7, 43, 9),rgb(9, 121, 111));
 }
 
+.home-page {
+  padding: 5% 9% 6%;
+  background: linear-gradient(rgb(9, 121, 111),rgb(9, 121, 111));
+}
+
+
 /* contact page */
 
 .contact-container {
