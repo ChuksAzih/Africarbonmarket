@@ -61,7 +61,12 @@ h3 {
   background: linear-gradient(rgb(7, 43, 9),rgb(9, 121, 111));
 }
 
-.home-page {
+.home-page1 {
+  padding: 5% 9% 6%;
+  background: linear-gradient(rgb(9, 121, 111),rgb(9, 121, 111));
+}
+
+.home-page2 {
   padding: 5% 9% 6%;
   background: linear-gradient(rgb(9, 121, 111),rgb(9, 121, 111));
 }
@@ -168,7 +173,7 @@ h3 {
   display: none;
 }
 
-#hp1:checked ~ .c-a-content1 {
+#hp1:checked ~ .h-p-content1 {
   display: block;
 }
 
