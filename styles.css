@@ -605,14 +605,14 @@ footer{
 
   .card{
     width: 137px;
-    height: 180px;
+    height: 200px;
     margin: 25px 20px 25px;
-    padding: 10px;
+    padding: 25px;
     align-content: center;
   }
 
   .my-card{
-    padding: 15px;
+    padding: 15px 20px 15px;
     background: linear-gradient( rgb(26, 24, 24),rgb(7, 43, 9));
    }
 
@@ -625,7 +625,7 @@ footer{
   }
 
   .card-button{
-    width: 5px;
+    width: 85px;
     height: 35px;
     font-size: xx-small;
   }
