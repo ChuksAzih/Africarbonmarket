@@ -676,6 +676,17 @@ footer{
   .carbon-inputs {
     width: 30vw;
   }
+  .carbon-xchange-forms {
+    margin: 0px;
+    padding: 15px 19px 12px;
+    align-items: center;
+  }
+
+  .carbon-account-forms {
+    margin: 0px;
+    padding: 15px 19px 12px;
+    align-items: center;
+  }
 }
 
  
