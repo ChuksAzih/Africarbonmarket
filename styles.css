@@ -201,6 +201,24 @@ h3 {
 /* */
 
 /* */
+.h-p-content3 {
+  display: none;
+}
+
+#hp3 {
+  display: none;
+}
+
+#hp3:checked ~ .h-p-content3 {
+  display: block;
+}
+
+#hp3:checked ~ label {
+  display: none;
+}
+/* */
+
+/* */
 .c-a-content1 {
   display: none;
 }
@@ -416,15 +434,15 @@ footer{
 
 .button {
   --color: #00A97F;
-  padding: 0.8em 1.7em;
+  padding: 0.2em 1.2em;
   background-color: transparent;
   border-radius: .5em;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: .5s;
-  font-weight: 400;
-  font-size: 17px;
+  font-weight: 150;
+  font-size: 12px;
   border: 1px solid;
   font-family: inherit;
   text-transform: uppercase;
@@ -435,11 +453,11 @@ footer{
  .button::before, .button::after {
   content: '';
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 10px;
+  height: 10px;
   transform: translate(-50%, -50%);
   position: absolute;
-  border-radius: 50%;
+  border-radius: 10%;
   z-index: -1;
   background-color: var(--color);
   transition: 1s ease;
@@ -456,8 +474,8 @@ footer{
  }
  
  .button:hover::before, .button:hover::after {
-  height: 410px;
-  width: 410px;
+  height: 105px;
+  width: 105px;
  }
  
  .button:hover {
