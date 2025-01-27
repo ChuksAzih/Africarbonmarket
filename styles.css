@@ -630,8 +630,8 @@ footer{
   }
 
   .contact-inputs {
-    width: 50px;
-    height: 25px;
+    width: 250px;
+    height: 65px;
     border: none;
     outline: none;
     padding-left: 25px;
@@ -641,8 +641,8 @@ footer{
   }
   
   .contact-left textarea {
-    height: 50px;
-    width: 35px;
+    height: 70px;
+    width: 250px;
     padding-top: 15px;
     padding-left: 25px;
     border-radius: 20px;
