@@ -71,6 +71,11 @@ h3 {
   background: linear-gradient(rgb(18, 31, 30),rgb(9, 121, 111));
 }
 
+.home-page3 {
+  padding: 3% 3.9% 4%;
+  background: linear-gradient(rgb(9, 121, 111),rgb(9, 121, 111));
+}
+
 
 /* contact page */
 
@@ -553,13 +558,19 @@ footer{
 
 
  @media (max-width: 700px) {
+
+  .carousel-item {
+    width: fit-content;
+    height: 400px;
+  }
+
   .home {
     text-align: end;
     font-size: small;
   }
 
-  .home-p{
-    text-align: end;
+  .home-p {
+    text-align: center;
     font-size: xx-small;
   }
 
@@ -584,9 +595,9 @@ footer{
 
   .card{
     width: 137px;
-    height: 230px;
+    height: 180px;
     margin: 10px;
-    padding: 15px;
+    padding: 55px;
     align-content: center;
   }
 
