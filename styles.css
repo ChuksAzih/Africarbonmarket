@@ -560,7 +560,7 @@ footer{
  @media (max-width: 700px) {
 
   .carousel-item {
-    width: fit-content;
+    width: 380px;
     height: 400px;
   }
 
@@ -580,8 +580,8 @@ footer{
     font-size: xx-small;
   }
   .footer-img{
-    width: 25px;
-    height: 25px;
+    width: 9px;
+    height: 9px;
   }
   .footer-p{
     font-size: xx-small;
