@@ -642,6 +642,10 @@ footer{
     font-size: x-small;
   }
 
+  .contact-container {
+    padding: 70px;
+  }
+
   .contact-right {
     display: none;
   }
