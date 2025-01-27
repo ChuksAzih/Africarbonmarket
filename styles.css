@@ -474,8 +474,8 @@ footer{
  }
  
  .button:hover::before, .button:hover::after {
-  height: 105px;
-  width: 105px;
+  height: 150px;
+  width: 150px;
  }
  
  .button:hover {
@@ -626,11 +626,30 @@ footer{
   }
 
   .contact-inputs {
-    width: 80vw;
+    width: 50vw;
+  }
+
+  .contact-inputs {
+    width: 50px;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: grey;
+    border-radius: 50px;
+  }
+  
+  .contact-left textarea {
+    height: 50px;
+    width: 35px;
+    padding-top: 15px;
+    padding-left: 25px;
+    border-radius: 20px;
   }
 
   .carbon-inputs {
-    width: 40vw;
+    width: 30vw;
   }
 }
 
