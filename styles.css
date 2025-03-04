@@ -446,7 +446,7 @@ label {
   }
   
   .social-icons {
-    display: flex;
+    display: contents;
     gap: 10px;
   }
   
