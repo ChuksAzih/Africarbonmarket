@@ -50,15 +50,20 @@ h3 {
 
 .about-us {
   padding: 5% 9% 6%;
-  background: linear-gradient(rgb(9, 121, 111),rgb(7, 43, 9));
+  background: linear-gradient(rgb(16, 26, 25),rgb(5, 32, 6));
 }
 
-.about-border{
+.what-we {
+  padding: 5% 9% 6%;
+  background: linear-gradient(rgb(48, 78, 49),rgb(9, 121, 111));
+}
+
+.what-we-border{
   margin-bottom: 30px;
   border-radius: 60px;
   padding: 2%;
   text-align: center;
-  background: linear-gradient(rgb(7, 43, 9),rgb(9, 121, 111));
+  background: linear-gradient(rgb(48, 78, 49),rgb(9, 121, 111));
 }
 
 .home-page1 {
