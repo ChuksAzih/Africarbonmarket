@@ -58,6 +58,26 @@ h3 {
   background: linear-gradient(rgb(63, 10, 26),rgb(68, 2, 46));
 }
 
+.team-color{
+  color: #161616;  
+  font-weight: 900;
+}
+
+.team-color1{
+  color: #161616;  
+  font-weight: 600;
+}
+
+.team-color2{
+  color: #363535;  
+  font-weight: 1000;
+}
+
+.the-team{
+  padding: 3% 7.4% 7.5%;
+  background: linear-gradient(rgb(255, 255, 255), rgb(251, 255, 251));
+}
+
 .what-we-border{
   margin-bottom: 30px;
   border-radius: 60px;
