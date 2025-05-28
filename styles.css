@@ -48,6 +48,7 @@ h3 {
   background-color: rgb(26, 24, 24);
 }
 
+/* about us and team page */
 .about-us {
   padding: 5% 9% 6%;
   background: linear-gradient(rgb(16, 26, 25),rgb(5, 32, 6));
@@ -55,7 +56,7 @@ h3 {
 
 .what-we {
   padding: 5% 9% 6%;
-  background: linear-gradient(rgb(63, 10, 26),rgb(68, 2, 46));
+  background: #fff;
 }
 
 .team-color{
@@ -78,6 +79,7 @@ h3 {
   background: linear-gradient(rgb(255, 255, 255), rgb(251, 255, 251));
 }
 
+
 .what-we-border{
   margin-bottom: 30px;
   border-radius: 60px;
@@ -85,6 +87,76 @@ h3 {
   text-align: center;
   background: linear-gradient(rgb(48, 78, 49),rgb(9, 121, 111));
 }
+
+
+.team-label {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000000;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+}
+
+/* */
+.tc-content1 {
+  display: none;
+}
+
+#tc1 {
+  display: none;
+}
+
+#tc1:checked ~ .tc-content1 {
+  display: block;
+}
+
+#tc1:checked ~ label {
+  display: none;
+}
+
+/* */
+/* */
+.tc-content2 {
+  display: none;
+}
+
+#tc2 {
+  display: none;
+}
+
+#tc2:checked ~ .tc-content2 {
+  display: block;
+}
+
+#tc2:checked ~ label {
+  display: none;
+}
+
+/* */
+/* */
+.tc-content3 {
+  display: none;
+}
+
+#tc3 {
+  display: none;
+}
+
+#tc3:checked ~ .tc-content3 {
+  display: block;
+}
+
+#tc3:checked ~ label {
+  display: none;
+}
+
+/* */
+
+/* about us and team page */
 
 .home-page1 {
   padding: 3% 3.9% 4%;
