@@ -201,36 +201,7 @@
     <hr>
   </div>
 
-<script src="preloader.js">
-  // preloader.js
-(function() {
-// Ensure body is hidden at start
-document.documentElement.style.visibility = 'hidden';
 
-window.addEventListener('load', function () {
-// Fade out preloader
-const pre = document.getElementById('preloader');
-if (pre) {
-pre.style.transition = 'opacity 0.5s ease';
-pre.style.opacity = '0';
-setTimeout(() => {
-pre.remove();
-// Reveal main content
-document.documentElement.style.visibility = 'visible';
-document.documentElement.style.opacity = '0';
-document.documentElement.style.transition = 'opacity 0.8s ease';
-document.documentElement.style.opacity = '1';
-}, 500);
-} else {
-// If no preloader, just fade in
-document.documentElement.style.visibility = 'visible';
-document.documentElement.style.opacity = '0';
-document.documentElement.style.transition = 'opacity 0.8s ease';
-document.documentElement.style.opacity = '1';
-}
-});
-})();
-</script>
 </body>
   
 
