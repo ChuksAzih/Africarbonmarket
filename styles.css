@@ -717,13 +717,13 @@ label {
  @media (max-width: 700px) {
 
   .carousel-item {
-    width: 240px;
-    height: 210px;
+    width: 200px;
+    height: 160px;
   }
 
   .carousel-img {
-    width: 240px;
-    height: 210px;
+    width: 200px;
+    height: 160px;
   }
 
   .carousel-caption {
