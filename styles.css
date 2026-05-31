@@ -765,14 +765,14 @@ label {
   .card{
     width: 300px;
     height: 340px;
-    margin: 20px 20px 25px;
+    margin: 20px 10px 25px;
     padding: 30px;
     align-content: center;
   }
 
   .homepagecard{
-    width: 270px;
-    height: 300px;
+    width: 258px;
+    height: 290px;
   }
 
   .my-card{
