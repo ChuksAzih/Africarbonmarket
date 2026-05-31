@@ -1,417 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sectoral Carbon Emissions Reduction</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sectoral Carbon Emissions Reduction</title>
 
-  <style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+        body {
+            background: #eef3ee;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            color: #0b1736;
+        }
 
-    body{
-      background:#eef3ee;
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:flex-start;
-      padding:40px 20px;
-      color:#0b1736;
-    }
+        .wrapper {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
 
-    .wrapper{
-      width:100%;
-      max-width:900px;
-      text-align:center;
-    }
+        .top-text {
+            letter-spacing: 4px;
+            font-size: 10px;
+            color: #5f6b85;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
 
-    .top-text{
-      letter-spacing:4px;
-      font-size:10px;
-      color:#5f6b85;
-      margin-bottom:10px;
-      text-transform:uppercase;
-    }
+        .main-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #07132c;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
 
-    .main-title{
-      font-size:42px;
-      font-weight:700;
-      color:#07132c;
-      margin-bottom:8px;
-      line-height:1.1;
-    }
+        .sub-title {
+            font-size: 15px;
+            color: #1f2c47;
+            margin-bottom: 25px;
+        }
 
-    .sub-title{
-      font-size:15px;
-      color:#1f2c47;
-      margin-bottom:25px;
-    }
+        .welcome-text {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 35px;
+        }
 
-    .welcome-text{
-      font-size:13px;
-      color:#6b7280;
-      margin-bottom:35px;
-    }
+        .form-container {
+            background: #f7f7f8;
+            border: 1px solid #d7dce4;
+            border-radius: 12px;
+            padding: 35px;
+            text-align: left;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
 
-    .form-container{
-      background:#f7f7f8;
-      border:1px solid #d7dce4;
-      border-radius:12px;
-      padding:35px;
-      text-align:left;
-      box-shadow:0 2px 8px rgba(0,0,0,0.03);
-    }
+        .section-title {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #111827;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
 
-    .section-title{
-      font-size:12px;
-      font-weight:700;
-      letter-spacing:1px;
-      color:#111827;
-      margin-bottom:25px;
-      text-transform:uppercase;
-    }
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-bottom: 20px;
+        }
 
-    .row{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:18px;
-      margin-bottom:20px;
-    }
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
 
-    .field{
-      display:flex;
-      flex-direction:column;
-    }
+        .field.full {
+            grid-column: 1 / -1;
+        }
 
-    .field.full{
-      grid-column:1 / -1;
-    }
+        label {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111827;
+        }
 
-    label{
-      font-size:12px;
-      font-weight:600;
-      margin-bottom:8px;
-      color:#111827;
-    }
+        .required {
+            color: #dc2626;
+        }
 
-    .required{
-      color:#dc2626;
-    }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            border: 1px solid #cfd6df;
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 13px 14px;
+            font-size: 13px;
+            outline: none;
+            transition: 0.3s;
+        }
 
-    input[type="text"],
-    textarea{
-      width:100%;
-      border:1px solid #cfd6df;
-      background:#ffffff;
-      border-radius:6px;
-      padding:13px 14px;
-      font-size:13px;
-      outline:none;
-      transition:0.3s;
-    }
+        input[type="text"]:focus,
+        textarea:focus {
+            border-color: #0b1736;
+            box-shadow: 0 0 0 3px rgba(11, 23, 54, 0.08);
+        }
 
-    input[type="text"]:focus,
-    textarea:focus{
-      border-color:#0b1736;
-      box-shadow:0 0 0 3px rgba(11,23,54,0.08);
-    }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
 
-    textarea{
-      min-height:120px;
-      resize:vertical;
-    }
+        .sector-title {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: #111827;
+        }
 
-    .sector-title{
-      font-size:12px;
-      font-weight:700;
-      margin-bottom:5px;
-      text-transform:uppercase;
-      color:#111827;
-    }
+        .sector-sub {
+            font-size: 11px;
+            color: #6b7280;
+            margin-bottom: 18px;
+        }
 
-    .sector-sub{
-      font-size:11px;
-      color:#6b7280;
-      margin-bottom:18px;
-    }
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
 
-    .checkbox-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-      margin-bottom:30px;
-    }
+        .checkbox-card {
+            border: 1px solid #cfd6df;
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            user-select: none;
+        }
 
-    .checkbox-card{
-      border:1px solid #cfd6df;
-      background:#ffffff;
-      border-radius:6px;
-      padding:12px 14px;
-      display:flex;
-      align-items:center;
-      gap:10px;
-      cursor:pointer;
-      transition:0.3s ease;
-      user-select:none;
-    }
+        .checkbox-card:hover {
+            border-color: #0b1736;
+            background: #f5f7fb;
+            transform: translateY(-1px);
+        }
 
-    .checkbox-card:hover{
-      border-color:#0b1736;
-      background:#f5f7fb;
-      transform:translateY(-1px);
-    }
+        .checkbox-card input {
+            cursor: pointer;
+            accent-color: #0b1736;
+        }
 
-    .checkbox-card input{
-      cursor:pointer;
-      accent-color:#0b1736;
-    }
+        .checkbox-card span {
+            font-size: 13px;
+            color: #111827;
+        }
 
-    .checkbox-card span{
-      font-size:13px;
-      color:#111827;
-    }
+        .bottom-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
 
-    .bottom-row{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:20px;
-      flex-wrap:wrap;
-      margin-top:20px;
-    }
+        .note {
+            font-size: 11px;
+            color: #7c8597;
+        }
 
-    .note{
-      font-size:11px;
-      color:#7c8597;
-    }
+        .submit-btn {
+            background: #08132f;
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
 
-    .submit-btn{
-      background:#08132f;
-      color:#ffffff;
-      border:none;
-      padding:14px 28px;
-      border-radius:6px;
-      font-size:13px;
-      font-weight:700;
-      cursor:pointer;
-      transition:0.3s ease;
-    }
+        .submit-btn:hover {
+            background: #13224d;
+            transform: translateY(-1px);
+        }
 
-    .submit-btn:hover{
-      background:#13224d;
-      transform:translateY(-1px);
-    }
+        .submit-btn:active {
+            transform: scale(0.98);
+        }
 
-    .submit-btn:active{
-      transform:scale(0.98);
-    }
+        @media(max-width:768px) {
 
-    @media(max-width:768px){
+            .main-title {
+                font-size: 30px;
+            }
 
-      .main-title{
-        font-size:30px;
-      }
+            .form-container {
+                padding: 25px;
+            }
 
-      .form-container{
-        padding:25px;
-      }
+            .row {
+                grid-template-columns: 1fr;
+            }
 
-      .row{
-        grid-template-columns:1fr;
-      }
+            .checkbox-grid {
+                grid-template-columns: 1fr;
+            }
 
-      .checkbox-grid{
-        grid-template-columns:1fr;
-      }
+            .bottom-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
-      .bottom-row{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-
-      .submit-btn{
-        width:100%;
-      }
-    }
-
-  </style>
+            .submit-btn {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light  bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img src="Images/navlogo.PNG" width="180px" height="50px"
+                        alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CarbonAccounting.html"> Carbon Accounting </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Carbon Xchange.html"> Carbon Xchange </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="climateChange.html">Climate Change</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Reg.html">Event Registration</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
 
-  <div class="wrapper">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="top-text">NATIONAL WORKSHOP</div>
+    <div class="wrapper">
 
-    <h1 class="main-title">
-      Sectoral Carbon Emissions Reduction
-    </h1>
+        <div class="top-text">NATIONAL WORKSHOP</div>
 
-    <div class="sub-title">Registration Portal</div>
+        <h1 class="main-title">
+            Sectoral Carbon Emissions Reduction
+        </h1>
 
-    <div class="welcome-text">
-      You are welcome to register for the National Workshop here.
+        <div class="sub-title">Registration Portal</div>
+
+        <div class="welcome-text">
+            You are welcome to register for the National Workshop here.
+        </div>
+
+        <form class="form-container" id="registrationForm">
+
+            <div class="section-title">PERSONAL DETAILS</div>
+
+            <div class="row">
+
+                <div class="field">
+                    <label>
+                        First Name<span class="required">*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+
+                <div class="field">
+                    <label>
+                        Surname<span class="required">*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="field full">
+                    <label>
+                        Organization<span class="required">*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="field full">
+                    <label>
+                        Position<span class="required">*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+
+            </div>
+
+            <div class="sector-title">BUSINESS SECTOR</div>
+
+            <div class="sector-sub">
+                Tick all that apply. Selected items will be included in your submission.
+            </div>
+
+            <div class="checkbox-grid">
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Transport">
+                    <span>Transport</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Aviation">
+                    <span>Aviation</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Communication">
+                    <span>Communication</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Finance & Banking">
+                    <span>Finance & Banking</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Hospitality">
+                    <span>Hospitality</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Events">
+                    <span>Events</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Industry">
+                    <span>Industry</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Manufacturing">
+                    <span>Manufacturing</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Public Sector">
+                    <span>Public Sector</span>
+                </label>
+
+                <label class="checkbox-card">
+                    <input type="checkbox" name="sector" value="Others">
+                    <span>Others</span>
+                </label>
+
+            </div>
+
+            <div class="field">
+                <label>QUESTIONS & ENQUIRIES</label>
+
+                <textarea placeholder="Type any questions or comments here..."></textarea>
+            </div>
+
+            <div class="bottom-row">
+
+                <div class="note">
+                    Your details will be sent to: registration@example.org
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Registration
+                </button>
+
+            </div>
+
+        </form>
+
     </div>
 
-    <form class="form-container" id="registrationForm">
+    <script>
 
-      <div class="section-title">PERSONAL DETAILS</div>
+        const form = document.getElementById("registrationForm");
 
-      <div class="row">
+        form.addEventListener("submit", function (e) {
 
-        <div class="field">
-          <label>
-            First Name<span class="required">*</span>
-          </label>
-          <input type="text" required>
-        </div>
+            e.preventDefault();
 
-        <div class="field">
-          <label>
-            Surname<span class="required">*</span>
-          </label>
-          <input type="text" required>
-        </div>
+            const checkedBoxes = document.querySelectorAll('input[name="sector"]:checked');
 
-      </div>
+            let selectedSectors = [];
 
-      <div class="row">
+            checkedBoxes.forEach((box) => {
+                selectedSectors.push(box.value);
+            });
 
-        <div class="field full">
-          <label>
-            Organization<span class="required">*</span>
-          </label>
-          <input type="text" required>
-        </div>
+            alert(
+                "Registration Submitted Successfully!\n\n" +
+                "Selected Sectors:\n" +
+                selectedSectors.join(", ")
+            );
 
-      </div>
+            // OPTIONAL EMAIL FUNCTIONALITY
+            // Replace with backend/email API later
 
-      <div class="row">
+        });
 
-        <div class="field full">
-          <label>
-            Position<span class="required">*</span>
-          </label>
-          <input type="text" required>
-        </div>
-
-      </div>
-
-      <div class="sector-title">BUSINESS SECTOR</div>
-
-      <div class="sector-sub">
-        Tick all that apply. Selected items will be included in your submission.
-      </div>
-
-      <div class="checkbox-grid">
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Transport">
-          <span>Transport</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Aviation">
-          <span>Aviation</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Communication">
-          <span>Communication</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Finance & Banking">
-          <span>Finance & Banking</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Hospitality">
-          <span>Hospitality</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Events">
-          <span>Events</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Industry">
-          <span>Industry</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Manufacturing">
-          <span>Manufacturing</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Public Sector">
-          <span>Public Sector</span>
-        </label>
-
-        <label class="checkbox-card">
-          <input type="checkbox" name="sector" value="Others">
-          <span>Others</span>
-        </label>
-
-      </div>
-
-      <div class="field">
-        <label>QUESTIONS & ENQUIRIES</label>
-
-        <textarea placeholder="Type any questions or comments here..."></textarea>
-      </div>
-
-      <div class="bottom-row">
-
-        <div class="note">
-          Your details will be sent to: registration@example.org
-        </div>
-
-        <button type="submit" class="submit-btn">
-          Submit Registration
-        </button>
-
-      </div>
-
-    </form>
-
-  </div>
-
-  <script>
-
-    const form = document.getElementById("registrationForm");
-
-    form.addEventListener("submit", function(e){
-
-      e.preventDefault();
-
-      const checkedBoxes = document.querySelectorAll('input[name="sector"]:checked');
-
-      let selectedSectors = [];
-
-      checkedBoxes.forEach((box)=>{
-        selectedSectors.push(box.value);
-      });
-
-      alert(
-        "Registration Submitted Successfully!\n\n" +
-        "Selected Sectors:\n" +
-        selectedSectors.join(", ")
-      );
-
-      // OPTIONAL EMAIL FUNCTIONALITY
-      // Replace with backend/email API later
-
-    });
-
-  </script>
+    </script>
 
 </body>
+
 </html>

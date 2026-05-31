@@ -717,8 +717,8 @@ label {
  @media (max-width: 700px) {
 
   .carousel-item {
-    width: 380px;
-    height: 350px;
+    width: 330px;
+    height: 300px;
   }
 
   .carousel-img {
