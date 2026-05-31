@@ -717,13 +717,13 @@ label {
  @media (max-width: 700px) {
 
   .carousel-item {
-    width: 200px;
-    height: 160px;
+    width: 380px;
+    height: 350px;
   }
 
   .carousel-img {
-    width: 200px;
-    height: 160px;
+    width: 380px;
+    height: 350px;
   }
 
   .carousel-caption {
@@ -763,11 +763,16 @@ label {
   }
 
   .card{
-    width: 137px;
-    height: 240px;
+    width: 290px;
+    height: 340px;
     margin: 20px 15px 25px;
     padding: 25px;
     align-content: center;
+  }
+
+  .homepagecard{
+    width: fit-content;
+    height: auto;
   }
 
   .my-card{
