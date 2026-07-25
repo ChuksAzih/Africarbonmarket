@@ -32,7 +32,7 @@
 </head>
 
 <body class="text-center">
-  
+
   <header>
     <nav class="navbar navbar-expand-md navbar-light  bg-light">
       <div class="container-fluid">
@@ -162,9 +162,26 @@
     <div class="card col-md-4 ">
       <div class="card-details">
         <p class="text-title"> What you need to know about Offset and Carbon Savings</p>
-        <p class="text-body"> The key issue about projects for carbon offset is to ensure that the scheme being funded
-          achieves the carbon savings
-          promised.......</p>
+        <!-- Button to open the pop-up -->
+        <button onclick="document.getElementById('iframeModal').style.display='flex'">Open Form</button>
+
+        <!-- The Modal Background -->
+        <div id="iframeModal"
+          style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+
+          <!-- The Box that holds your page -->
+          <div
+            style="background:white; border-radius:8px; width:90%; max-width:600px; height:80%; position:relative; overflow:hidden;">
+
+            <!-- Close Button (X) -->
+            <button onclick="document.getElementById('iframeModal').style.display='none'"
+              style="position:absolute; top:10px; right:15px; background:red; color:white; border:none; border-radius:50%; width:30px; height:30px; cursor:pointer; font-weight:bold;">X</button>
+
+            <!-- Your existing page loaded here -->
+            <iframe src="YOUR_PAGE_URL.html" style="width:100%; height:100%; border:none; margin-top:40px;"></iframe>
+
+          </div>
+        </div>
       </div>
       <p class="home-p"><a class="card-button" href="more-info.html">Read more</a></p>
     </div>
@@ -172,7 +189,8 @@
     <div class="card col-md-4 ">
       <div class="card-details">
         <p class="text-title"> </p>
-        <p class="text-body"><img class="homepagecard" height="456x" width="380px" src="Images/flier 2.jpeg" alt=""> </p>
+        <p class="text-body"><img class="homepagecard" height="456x" width="380px" src="Images/flier 2.jpeg" alt="">
+        </p>
       </div>
       <p class="home-p"><a class="card-button" href=" ">Read more</a></p>
     </div>
