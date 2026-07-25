@@ -407,17 +407,16 @@
                 "Selected Sectors:\n" +
                 selectedSectors.join(", ")
             );
+            
 
             // OPTIONAL EMAIL FUNCTIONALITY
             // Replace with backend/email API later
 
         });
+        window.parent.document.getElementById('iframeModal').style.display = 'none';
 
     </script>
-    <script>
-        // Tells the main page to hide the modal
-        window.parent.document.getElementById('iframeModal').style.display = 'none';
-    </script>
+    
 
 
 </body>
