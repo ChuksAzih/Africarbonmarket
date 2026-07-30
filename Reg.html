@@ -260,162 +260,322 @@
             You are welcome to register for the National Workshop here.
         </div>
 
-        <form action="https://api.web3forms.com/submit" method="POST" class=" " id="registrationForm">
-        
-            <div class="section-title">PERSONAL DETAILS</div>
-            <input type="hidden" name="access_key" value="fa97c974-af28-4af1-a9f8-48e303153a49">
-        
-            <div class="row">
-        
-                <div class="field">
-                    <label>
-                        First Name<span class="required">*</span>
-                    </label>
-                    <input type="text" required>
-                </div>
-        
-                <div class="field">
-                    <label>
-                        Surname<span class="required">*</span>
-                    </label>
-                    <input type="text" required>
-                </div>
-        
-            </div>
-        
-            <div class="row">
+        <!-- Button to open the registration form -->
+<button id="openFormBtn" class="submit-btn">
+    Register for Workshop
+</button>
 
-                <div class="field full">
-                    <label>
-                        Organization<span class="required">*</span>
-                    </label>
-                    <input type="text" required>
-                </div>
+<!-- Registration Form Container -->
+<div id="formContainer" style="display:none;">
 
-            </div>
+<form action="https://api.web3forms.com/submit"
+      method="POST"
+      id="registrationForm">
 
-            <div class="row">
+    <!-- Web3Forms Access Key -->
+    <input type="hidden"
+           name="access_key"
+           value="fa97c974-af28-4af1-a9f8-48e303153a49">
 
-                <div class="field full">
-                    <label>
-                        Position<span class="required">*</span>
-                    </label>
-                    <input type="text" required>
-                </div>
+    <input type="hidden"
+           name="subject"
+           value="National Workshop Registration">
 
-            </div>
+    <input type="hidden"
+           name="from_name"
+           value="Africa Carbon Market Registration">
 
-            <div class="sector-title">BUSINESS SECTOR</div>
+    <div class="section-title">
+        PERSONAL DETAILS
+    </div>
 
-            <div class="sector-sub">
-                Tick all that apply. Selected items will be included in your submission.
-            </div>
+    <div class="row">
 
-            <div class="checkbox-grid">
+        <div class="field">
+            <label>
+                First Name <span class="required">*</span>
+            </label>
 
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Transport">
-                    <span>Transport</span>
-                </label>
+            <input
+                type="text"
+                name="first_name"
+                required>
+        </div>
 
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Aviation">
-                    <span>Aviation</span>
-                </label>
+        <div class="field">
+            <label>
+                Surname <span class="required">*</span>
+            </label>
 
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Communication">
-                    <span>Communication</span>
-                </label>
-
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Finance & Banking">
-                    <span>Finance & Banking</span>
-                </label>
-
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Hospitality">
-                    <span>Hospitality</span>
-                </label>
-
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Events">
-                    <span>Events</span>
-                </label>
-
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Industry">
-                    <span>Industry</span>
-                </label>
-
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Manufacturing">
-                    <span>Manufacturing</span>
-                </label>
-
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Public Sector">
-                    <span>Public Sector</span>
-                </label>
-
-                <label class="checkbox-card">
-                    <input type="checkbox" name="sector" value="Others">
-                    <span>Others</span>
-                </label>
-
-            </div>
-
-            <div class="field">
-                <label>QUESTIONS & ENQUIRIES</label>
-
-                <textarea placeholder="Type any questions or comments here..."></textarea>
-            </div>
-
-            <div class="bottom-row">
-
-                <div class="note">
-                    Your details will be sent to: info@africarbonmarket.com
-                </div>
-
-                <button type="submit" class="submit-btn">
-                    Submit Registration
-                </button>
-                
-
-            </div>
-
-        </form>
+            <input
+                type="text"
+                name="surname"
+                required>
+        </div>
 
     </div>
 
-    <script>
+    <div class="row">
 
-        const form = document.getElementById("registrationForm");
+        <div class="field full">
 
-        form.addEventListener("submit", function (e) {
+            <label>
+                Organization
+                <span class="required">*</span>
+            </label>
 
-            const checkedBoxes = document.querySelectorAll('input[name="sector"]:checked');
+            <input
+                type="text"
+                name="organization"
+                required>
 
-            let selectedSectors = [];
+        </div>
 
-            checkedBoxes.forEach((box) => {
-                selectedSectors.push(box.value);
-            });
+    </div>
+
+    <div class="row">
+
+        <div class="field full">
+
+            <label>
+                Position
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="position"
+                required>
+
+        </div>
+
+    </div>
+
+    <div class="sector-title">
+        BUSINESS SECTOR
+    </div>
+
+    <div class="sector-sub">
+        Tick all sectors that apply.
+    </div>
+
+    <div class="checkbox-grid">
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Transport">
+            <span>Transport</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Aviation">
+            <span>Aviation</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Communication">
+            <span>Communication</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Finance & Banking">
+            <span>Finance & Banking</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Hospitality">
+            <span>Hospitality</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Events">
+            <span>Events</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Industry">
+            <span>Industry</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Manufacturing">
+            <span>Manufacturing</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Public Sector">
+            <span>Public Sector</span>
+        </label>
+
+        <label class="checkbox-card">
+            <input type="checkbox"
+                   name="sector"
+                   value="Others">
+            <span>Others</span>
+        </label>
+
+    </div>
+
+    <div class="field">
+
+        <label>
+            QUESTIONS & ENQUIRIES
+        </label>
+
+        <textarea
+            name="questions"
+            placeholder="Type any questions here..."></textarea>
+
+    </div>
+
+    <div class="bottom-row">
+
+        <div class="note">
+            Your details will be sent to:
+            info@africarbonmarket.com
+        </div>
+
+        <button
+            type="submit"
+            class="submit-btn"
+            id="submitBtn">
+
+            Submit Registration
+
+        </button>
+
+    </div>
+
+</form>
+
+</div>
+
+    </div>
+
+    <script>// ==========================================
+// Registration Form Script
+// ==========================================
+
+// Get page elements
+const openFormBtn = document.getElementById("openFormBtn");
+const formContainer = document.getElementById("formContainer");
+const registrationForm = document.getElementById("registrationForm");
+const submitBtn = document.getElementById("submitBtn");
+
+// ------------------------------------------
+// Opens the form
+// Every time the form opens,
+// all previous data is cleared.
+// ------------------------------------------
+function openRegistrationForm() {
+
+    registrationForm.reset();
+
+    formContainer.style.display = "block";
+}
+
+// ------------------------------------------
+// Closes the form
+// ------------------------------------------
+function closeRegistrationForm() {
+
+    formContainer.style.display = "none";
+}
+
+// Open button
+openFormBtn.addEventListener("click", openRegistrationForm);
+
+// ------------------------------------------
+// Submit Form
+// ------------------------------------------
+registrationForm.addEventListener("submit", async function (event) {
+
+    // Prevent normal page reload
+    event.preventDefault();
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitting...";
+
+    // Collect all form fields
+    const formData = new FormData(registrationForm);
+
+    try {
+
+        const response = await fetch(
+            registrationForm.action,
+            {
+                method: "POST",
+                body: formData
+            }
+        );
+
+        const result = await response.json();
+
+        // Submission Successful
+        if (result.success) {
 
             alert(
-                "Registration Submitted Successfully!\n\n" +
-                "Selected Sectors:\n" +
-                selectedSectors.join(", ")
+                "Registration submitted successfully!\n\n" +
+                "Thank you for registering."
             );
-            
 
-            // OPTIONAL EMAIL FUNCTIONALITY 
-            // Replace with backend/email AP I later
- 
-        });
-        
+            // Remove all entered values
+            registrationForm.reset();
 
-    </script>
+            // Hide the form
+            closeRegistrationForm();
+
+        }
+
+        // Submission Failed
+        else {
+
+            alert(
+                "Submission failed.\n\n" +
+                result.message
+            );
+
+        }
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        alert(
+            "Unable to submit the registration.\n" +
+            "Please check your internet connection and try again."
+        );
+
+    }
+
+    finally {
+
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit Registration";
+
+    }
+
+});
+</script>
     
 
 
