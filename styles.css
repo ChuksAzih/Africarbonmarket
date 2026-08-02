@@ -1,6 +1,6 @@
 body{
   font-family: sans-serif;
-
+  padding-top: 76px;
 }
 
 hr{
@@ -573,7 +573,17 @@ label {
   border-radius: 50px;
   background: linear-gradient(45deg, #218923, #525353);
   
+} 
+ 
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    box-shadow: 0 2px 15px rgba(0,0,0,.1);
 }
+
 
 .nav-scroller {
   position: relative;
