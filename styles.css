@@ -762,7 +762,7 @@ label {
 
 .carousel-item-next,
 .carousel-item-prev{
-    display:block;
+    display: flexbox;
     opacity:.45;
     transform:scale(.88);
 }
