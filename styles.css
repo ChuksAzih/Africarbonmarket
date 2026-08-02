@@ -799,7 +799,9 @@ label {
 .carousel-caption h2{
     font-weight:600;
 }
-
+.carousel-caption h3{
+  font-size:1.1rem;
+}
 .carousel-caption p{
     font-size:1.1rem;
 }
