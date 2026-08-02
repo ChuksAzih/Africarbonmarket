@@ -773,8 +773,8 @@ label {
 .carousel-item-next,
 .carousel-item-prev{
     display: flexbox;
-    opacity:.85;
-    transform:scale(.88);
+    opacity:.99;
+    transform:scale(.90);
 }
 
 .carousel-item.active{
@@ -797,11 +797,11 @@ label {
 
 .carousel-caption h1,
 .carousel-caption h2{
-    font-weight:500;
+    font-weight:600;
 }
 
 .carousel-caption p{
-    font-size:.8rem;
+    font-size:1.1rem;
 }
 
 /* Controls */
@@ -838,14 +838,14 @@ label {
 .carousel-indicators button{
     width:10px !important;
     height:10px !important;
-    border-radius:20%;
+    border-radius:30%;
     margin:0 6px !important;
     background:#999;
     opacity:.6;
 }
 
 .carousel-indicators .active{
-    width:34px !important;
+    width:24px !important;
     border-radius:20px;
     background:#198754;
     opacity:1;
