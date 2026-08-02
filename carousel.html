@@ -32,17 +32,13 @@
 </head>
 
 <body class="text-center">
-
   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="mx-auto">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -51,31 +47,24 @@
                   <img src="Images/navlogo.PNG" width="180" height="50" alt="">
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="about us.html">About Us</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="CarbonAccounting.html">Carbon Accounting</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="Carbon Xchange.html">Carbon Xchange</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="climateChange.html">Climate Change</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="contact us.html">Contact Us</a>
               </li>
-
               <li class="nav-item">
                 <button onclick="document.getElementById('iframeModal').style.display='flex'">Register</button>
               </li>
@@ -87,153 +76,107 @@
 
   </header>
 
-  <main><div class="container-fluid py-4">
-  <div class="row justify-content-center">
-    <div class="col-12 col-xl-10">
+<main><!-- Modern Carousel Section -->
+    <section class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-11 col-xl-10">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="Images/carbon3.jpg" width="100%" height="65%" class="carousel-img" alt="">
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                    <h1 class="home"> Carbon Emission </h1>
+                                    <p class="home-p">Imagine a world with little or no carbon emission </p>
+                                    <p class="home-p">
+                                        <a class="btn" href="Carbon Xchange.html">Sign up today </a>
+                                    </p>
 
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                </div>
+                            </div>
 
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
+                        </div>
 
-          <button type="button" data-bs-target="#myCarousel"
-            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <!-- Slide 2 -->
 
-          <button type="button" data-bs-target="#myCarousel"
-            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <div class="carousel-item">
+                            <img src="Images/greenfrst3.jpg" width="100%" height="65%" class="carousel-img" alt="">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="featurette-heading fw-normal lh-1"> Forest Carbon </h2>
+                                    <h3>
+                                        <p> The forests provide trees or forest carbon which is the amount of carbon
+                                            dioxide
+                                            that a tree or forest could sequester or prevent from exposure to the
+                                            atmosphere
+                                            as it holds onto such......</p>
 
-          <button type="button" data-bs-target="#myCarousel"
-            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </h3>
+                                    <p class="home-p">
+                                        <a class="btn" href="more-info.html"> Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <img src="Images/animalgrp3.jpg" width="100%" height="65%" class="carousel-img" alt="">
+                            <div class="container">
+                                <div class="carousel-caption text-end">
+                                    <h2 class="featurette-heading fw-normal lh-1"> Agricultural emissions</h2>
+                                    <h3>
+                                        <p>Africa Carbon Market Inc. provides support to climate-smart livestock and
+                                            crop
+                                            producers to raise market-based carbon finance for sustainable livestock
+                                            production..... </p>
+                                    </h3>
+                                    <p class="home-p">
+                                        <a class="btn" href="more-info.html"> Continue Reading</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="carousel-item">
+                            <img src="Images/Carbon-fi.jpg" width="100%" height="auto" class="carousel-img" alt="">
+                            <div class="container">
+                                <div class="carousel-caption text-center">
+                                    <h2 class="featurette-heading fw-normal lh-1"> Carbon Finance </h2>
+                                    <h3>
+                                        <p>Africa Climate Finance ....what is it.</p>
+                                    </h3>
+                                    <p class="home-p">
+                                        <a class="btn" href="more-info.html">Continue Reading</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden"> Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
-
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img src="Images/carbon3.jpg" width="100%" height="65%" class="carousel-img" alt="">
-
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1 class="home">Carbon Emission</h1>
-                <p class="home-p">
-                  Imagine a world with little or no carbon emission
-                </p>
-                <p class="home-p">
-                  <a class="btn" href="Carbon Xchange.html">
-                    Sign up today
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Images/greenfrst3.jpg" width="100%" height="65%" class="carousel-img" alt="">
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h2 class="featurette-heading fw-normal lh-1">
-                  Forest Carbon
-                </h2>
-
-                <h3>
-                  <p>
-                    The forests provide trees or forest carbon which is the amount
-                    of carbon dioxide that a tree or forest could sequester or
-                    prevent from exposure to the atmosphere as it holds onto such......
-                  </p>
-                </h3>
-
-                <p class="home-p">
-                  <a class="btn" href="more-info.html">
-                    Read more
-                  </a>
-                </p>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Images/animalgrp3.jpg" width="100%" height="65%" class="carousel-img" alt="">
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h2 class="featurette-heading fw-normal lh-1">
-                  Agricultural emissions
-                </h2>
-
-                <h3>
-                  <p>
-                    Africa Carbon Market Inc. provides support to climate-smart
-                    livestock and crop producers to raise market-based carbon finance
-                    for sustainable livestock production.....
-                  </p>
-                </h3>
-
-                <p class="home-p">
-                  <a class="btn" href="more-info.html">
-                    Continue Reading
-                  </a>
-                </p>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Images/Carbon-fi.jpg" width="100%" height="auto" class="carousel-img" alt="">
-
-            <div class="container">
-              <div class="carousel-caption text-center">
-
-                <h2 class="featurette-heading fw-normal lh-1">
-                  Carbon Finance
-                </h2>
-
-                <h3>
-                  <p>
-                    Africa Climate Finance ....what is it.
-                  </p>
-                </h3>
-
-                <p class="home-p">
-                  <a class="btn" href="more-info.html">
-                    Continue Reading
-                  </a>
-                </p>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <button class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev">
-
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-
-        </button>
-
-        <button class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next">
-
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-
-        </button>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
+    </section>
   </main>

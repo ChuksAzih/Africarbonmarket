@@ -712,7 +712,218 @@ label {
   opacity: 1;
  }
 
+  /*CAROUSEL*/
+  /* ===========================
+   MODERN CAROUSEL
+=========================== */
 
+#myCarousel {
+    width: 86%;
+    margin: 40px auto;
+    overflow: visible;
+    position: relative;
+}
+
+#myCarousel .carousel-inner {
+    overflow: visible;
+}
+
+#myCarousel .carousel-item {
+    transition: transform .7s ease, opacity .7s ease;
+}
+
+#myCarousel .carousel-item img {
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.18);
+    object-fit: cover;
+}
+
+/* Existing image class preserved */
+.carousel-img{
+    width:100%;
+    height:650px;
+    object-fit:cover;
+    display:block;
+}
+
+/* Show portions of adjacent slides */
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end{
+    transform:translateX(88%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start{
+    transform:translateX(-88%);
+}
+
+/* Make side slides visible */
+
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+    opacity:.45;
+    transform:scale(.88);
+}
+
+.carousel-item.active{
+    opacity:1;
+    transform:scale(1);
+    z-index:2;
+}
+
+/* Caption */
+
+.carousel-caption{
+    left:8%;
+    right:8%;
+    bottom:12%;
+    padding:25px;
+    border-radius:15px;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(8px);
+}
+
+.carousel-caption h1,
+.carousel-caption h2{
+    font-weight:700;
+}
+
+.carousel-caption p{
+    font-size:1.1rem;
+}
+
+/* Controls */
+
+.carousel-control-prev,
+.carousel-control-next{
+    width:60px;
+    opacity:1;
+}
+
+.carousel-control-prev{
+    left:-70px;
+}
+
+.carousel-control-next{
+    right:-70px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,.55);
+    background-size:55%;
+}
+
+/* Indicators */
+
+.carousel-indicators{
+    bottom:-45px;
+}
+
+.carousel-indicators button{
+    width:12px !important;
+    height:12px !important;
+    border-radius:50%;
+    margin:0 6px !important;
+    background:#999;
+    opacity:.6;
+}
+
+.carousel-indicators .active{
+    width:34px !important;
+    border-radius:20px;
+    background:#198754;
+    opacity:1;
+}
+
+/* Buttons inside captions */
+
+.carousel-caption .btn{
+    border-radius:40px;
+    padding:12px 28px;
+    font-weight:600;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:1200px){
+
+    #myCarousel{
+        width:92%;
+    }
+
+    .carousel-img{
+        height:560px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    #myCarousel{
+        width:96%;
+    }
+
+    .carousel-img{
+        height:450px;
+    }
+
+    .carousel-control-prev{
+        left:-15px;
+    }
+
+    .carousel-control-next{
+        right:-15px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #myCarousel{
+        width:100%;
+        margin:0 auto;
+    }
+
+    .carousel-img{
+        height:320px;
+        border-radius:0;
+    }
+
+    .carousel-caption{
+        left:5%;
+        right:5%;
+        bottom:8%;
+        padding:15px;
+    }
+
+    .carousel-caption h1{
+        font-size:2rem;
+    }
+
+    .carousel-caption h2{
+        font-size:1.7rem;
+    }
+
+    .carousel-caption p{
+        font-size:.95rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next{
+        display:none;
+    }
+
+}
+   /*CAROUSEL*/
+ 
 
  @media (max-width: 700px) {
 
