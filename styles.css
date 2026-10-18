@@ -680,10 +680,9 @@ label {
   color: black;
   height: 80%;
   gap: .5em;
-  display: flex;
+  display: grid;
   place-content: center;
-  align-items: center;
-  justify-content: center;
+  
  }
 
   .card-img {
