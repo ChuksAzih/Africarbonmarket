@@ -706,8 +706,8 @@ label {
   transition: 0.3s ease-out;
  }
 .image-box {
-    width: 100%;
-    height: 430px;          /* Box height */
+    width: 350px;           /* Box width */
+    height: 450px;          /* Box height */
     display: flex;
     justify-content: center;
     align-items: center;
