@@ -678,10 +678,15 @@ label {
  
  .card-details {
   color: black;
-  height: 80%;
+  
   gap: .5em;
   display: grid;
   place-content: center;
+  width: 470px;
+  height: 520px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
   
  }
 
