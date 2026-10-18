@@ -666,8 +666,8 @@ label {
 .card {
   margin: auto;
   padding: 2%;
-  width: 380px;
-  height: 450px;
+  width: 420px;
+  height: 500px;
   border-radius: 10px;
   background: #f5f5f5;
   position: relative;
@@ -700,6 +700,19 @@ label {
   opacity: 16;
   transition: 0.3s ease-out;
  }
+.image-box{
+  width: 370px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+ }
+  
+ .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
  
  .text-body {
   color: rgb(134, 134, 134);
