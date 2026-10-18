@@ -692,7 +692,7 @@ label {
  
  .card-button {
   transform: translate(-50%, 125%);
-  width: 60%;
+  width: 50%;
   border-radius: 1rem;
   border: none;
   background-color: #297e10;
@@ -703,7 +703,7 @@ label {
   left: 50%;
   bottom: 0;
   opacity: 16;
-  transition: 0.3s ease-out;
+  transition: 0.6s ease-out;
  }
 .image-box{
   width: 470px;
