@@ -710,8 +710,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    padding: 10px;
+    padding: 10px 25px 10px 25px; /* Padding inside the box */
     box-sizing: border-box;
 }
 
