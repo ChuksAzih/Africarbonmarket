@@ -680,8 +680,10 @@ label {
   color: black;
   height: 80%;
   gap: .5em;
- 
+  display: flex;
   place-content: center;
+  align-items: center;
+  justify-content: center;
  }
 
   .card-img {
@@ -692,7 +694,7 @@ label {
  
  .card-button {
   transform: translate(-50%, 125%);
-  width: 50%;
+  width: 60%;
   border-radius: 1rem;
   border: none;
   background-color: #297e10;
@@ -703,7 +705,7 @@ label {
   left: 50%;
   bottom: 0;
   opacity: 16;
-  transition: 0.6s ease-out;
+  transition: 0.3s ease-out;
  }
 .image-box{
   width: 470px;
