@@ -666,11 +666,10 @@ label {
 .card {
   margin: auto;
   padding: 2%;
-  width: 420px;
+  width: 4600px;
   height: 500px;
   border-radius: 10px;
   background: #f5f5f5;
-  position: relative;
   padding: 1rem;
   border: 2px solid #c3c6ce;
   transition: 0.5s ease-out;
@@ -680,8 +679,8 @@ label {
  .card-details {
   color: black;
   height: 80%;
-  gap: .1.5em;
-  display: grid;
+  gap: .5em;
+  display: flex;
   place-content: center;
  }
  
