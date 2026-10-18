@@ -683,6 +683,12 @@ label {
   display: flex;
   place-content: center;
  }
+
+  .card-img {
+  color: black;
+  align-items: center;
+  justify-content: center;
+ }
  
  .card-button {
   transform: translate(-50%, 125%);
