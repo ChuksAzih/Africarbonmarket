@@ -723,11 +723,7 @@ label {
     
 }
   
- .image-box img {
-  width: 325px;
-  height: 430px;
-  object-fit: contain;
-}
+
  
  .text-body {
   color: rgb(134, 134, 134);
