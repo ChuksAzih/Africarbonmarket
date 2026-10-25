@@ -711,6 +711,8 @@ label {
   flex-wrap: wrap;
   align-items: stretch;
   row-gap: 25px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 /* Individual card column */
