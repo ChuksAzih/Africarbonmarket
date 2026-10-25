@@ -704,26 +704,94 @@ label {
   opacity: 16;
   transition: 0.3s ease-out;
  }
-.image-box {
-    width: 350px;           /* Box width */
-    height: 450px;          /* Box height */
-    display: fixed;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px 10px 15px; /* Padding inside the box */
-    box-sizing: border-box;
+
+/* Container for the upcoming events section cards */
+.workshop-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  row-gap: 25px;
 }
 
-.homepagecard {
-    max-width: 325px;
-    max-height: 430px;
-    width: 300px;
-    height: 430px;
-    object-fit: contain;
-    
+/* Individual card column */
+.workshop-cards > div {
+  display: flex;
+  flex-direction: column;
 }
-  
 
+/* Card styling */
+.workshop-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+
+/* Image container */
+.workshop-image-box {
+  width: 100%;
+  height: 420px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f8f5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Poster image */
+.workshop-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Card footer */
+.workshop-card-footer {
+  margin-top: auto;
+  padding: 16px;
+  text-align: center;
+  background: #ffffff;
+}
+
+/* Read More button */
+.card-button {
+  display: inline-block;
+  padding: 11px 26px;
+  background: #176b3a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.card-button:hover {
+  background: #10532c;
+  color: #ffffff;
+}
+
+.card-button:focus-visible {
+  outline: 3px solid #e0b84c;
+  outline-offset: 3px;
+}
+
+/* end for upcoming events page*/
  
  .text-body {
   color: rgb(134, 134, 134);
@@ -746,10 +814,8 @@ label {
   opacity: 1;
  }
 
-  /*CAROUSEL*/
-  /* ===========================
-   MODERN CAROUSEL
-=========================== */
+  /*CAROUSEL on Home page*/
+  /* ======MODERN CAROUSEL===== */
 
 #myCarousel {
     width: 85%;
@@ -885,9 +951,7 @@ label {
     font-weight:400;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* =========RESPONSIVE screens============ */
 
 @media (max-width:1200px){
 
@@ -918,8 +982,12 @@ label {
     .carousel-control-next{
         right:-15px;
     }
+    .workshop-image-box {
+    height: 360px;
+  }
 
 }
+
 
 @media (max-width:768px){
 
@@ -956,6 +1024,20 @@ label {
     .carousel-control-next{
         display:none;
     }
+      .workshop-cards > div {
+    width: 100%;
+  }
+
+  .workshop-image-box {
+    height: auto;
+    min-height: 250px;
+    max-height: 520px;
+    aspect-ratio: 3 / 4;
+  }
+
+  .workshop-card-footer {
+    padding: 14px;
+  }
 
 }
    /*CAROUSEL*/
